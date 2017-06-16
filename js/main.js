@@ -10,6 +10,8 @@ function losItem(){
 	var valor = document.getElementById("valor").value;
 	localStorage.setItem(clave,valor);
 	guardar();
+	document.getElementById("clave").value = "";
+	document.getElementById("valor").value = "";
 }
 
 function guardar(){
@@ -18,7 +20,7 @@ function guardar(){
 
 	for(var i = 0; i < localStorage.length; i++){
 		var kei = localStorage.key(i); // devuelve el numero 
-		var valuee = localStorage.getItem(kei); //devuelve el valor
+		var elValor = localStorage.getItem(kei); //devuelve el valor
 
 		var caja = document.createElement("div"); 
 		caja.classList.add("lacaja");
@@ -29,11 +31,12 @@ function guardar(){
 		titulo.appendChild(tituloV);
 
 		var textoCaja = document.createElement("p"); 
-		var texto = document.createTextNode(valuee);
+		var texto = document.createTextNode(elValor);
 		textoCaja.classList.add("eltexto");
 		textoCaja.appendChild(texto);
 
 		/*
+		Boton por caja para borrar post uno por uno
 		var borrar = document.createElement("a");
 		borrar.classList.add("boton-borrar");
 		var textborrar = document.createElement("i");
@@ -53,14 +56,10 @@ function guardar(){
 			localStorage.clear(caja);
 		})
 		*/
-
 	}
 }
 
-
 init();
-
-
 
 
 var borrarTodo = document.getElementById("boton-borrar");	

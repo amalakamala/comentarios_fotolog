@@ -30,6 +30,7 @@ h1{
 
 textarea, input{
   width: 100%;
+  padding: 5px 0;
   border-radius: 0px;
   border: 1px solid DeepPink;
   margin-bottom: 20px;
@@ -90,6 +91,14 @@ footer{
   border-radius: 0;
   border: none;
 }
+
+.botones-style:active,
+.botones-style:focus{
+  background-color: #E84498;
+
+}
+
+
 
 /*
 .boton-borrar{
