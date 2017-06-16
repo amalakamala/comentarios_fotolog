@@ -59,5 +59,65 @@ footer{
 
 
 
+/*--------DIV CAJA COMENTARIO ----------*/
+.lacaja{
+  background-color: #FF9CE3;
+  padding: 20px;
+  border-radius: 1.08em;
+  margin: 10px 0;
+}
+
+.eltitulo{
+  font-size: 16px;  
+  color: #FD0083;
+  text-transform: uppercase;
+}
+
+.eltexto{
+  color: white;
+  font-size: 12px;
+}
+
+.botones-style{
+  background-color: #EE97C3;
+  border-radius: 0;
+  border: none;
+}
+
+
+.botones-style:hover{
+  background-color: #C1799D;
+  border-radius: 0;
+  border: none;
+}
+
+/*
+.boton-borrar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  color: white;
+  text-decoration: none; 
+}
+
+.boton-borrar:hover{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  color: #783E6A;
+  text-decoration: none; 
+}
+
+.fa-trash{
+  background-color: transparent;
+  font-size: 18px;
+
+}
+
+*/
+
+
 /* Estilos comentarios */
 
